@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Montserrat";
+}
+
+#header {
+  background-color: rgba(255, 255, 255, 0.281);
+}
+#heroSection {
+  background-image: url(../src/Components/Main/HeroSection/assets/herosection.webp);
+  background-position: center;
+  background-size: cover;
+}
+#heroSection::before {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+#textSlider {
+  animation-name: textSlider;
+  animation-timing-function: ease-in-out;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes textSlider {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-370%);
+  }
+}
+
+#testimonial {
+  background-image: url(/src/Components/Main/Testimonial/assets/testmonial.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+#newsletter {
+  background-image: url(./Components/Main/Newsletter/assets/newsLetter.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
